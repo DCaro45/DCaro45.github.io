@@ -1,0 +1,166 @@
+/*ALL*/
+
+* {
+    /*box-sizing: border-box;*/
+}
+
+html {
+}
+
+body {
+    background-color: white;
+    font-family: JetBrains Mono ExtraBold, sans-serif, Arial Rounded MT Bold;
+    margin: 0px;
+    font-size: 1.5vw;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    border-radius: 30%;
+}
+
+nav {
+    /*background-color: orange;*/
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+}
+
+ul {
+    margin: 0px;
+}
+
+/*HEADER*/
+
+body > header {
+    background-color: orange;
+    color: rgb(235,65,89);
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    justify-content: space-around;
+}
+
+
+.main_header {
+    /*Same as descendent selector above*/
+    /*padding: 30px;*/
+    /*text-align: center;*/
+}
+
+#logo {
+    font-family: "Agency FB", "Fredoka one", sans-serif;
+    /*margin: auto;*/
+    /*padding: 8px;*/
+    /*width: 30%;*/
+    border-radius: 30%;
+    /*text-align: center;*/
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.navbutton {
+    /*background-color: orange;*/
+    /*border: none;*/
+    color: white;
+    /*padding: 10px 20px;*/
+    /*text-align: center;*/
+    text-decoration: none;
+    /*display: inline-block;*/
+    /*font-size: 16px;*/
+    /*margin: 4px 2px;*/
+    /*cursor: pointer;*/
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    padding: 12px;
+    margin: 10px;
+    border: solid 1px black;
+    border-radius: 10%;
+}
+
+body > header > nav > ul {
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    list-style: none;
+    text-decoration: none;
+    /*margin: 0px;*/
+    /*padding: 0px;*/
+}
+
+#nav_ul {
+    display: flex;
+    /*justify-content: space-around;*/
+    /*list-style: none;*/
+    /*text-decoration: none;*/
+    /*margin: 0px;*/
+    padding: 0px;
+}
+
+#nav_ul > li {
+    /*display: inline;*/
+    /*border: 1px solid black;*/
+    /*border-radius: 10px;*/
+    /*background-color: orange;*/
+}
+
+/*MAIN*/
+
+body > main article {
+    width: 70%;
+    margin: auto;
+    color: black
+}
+
+#main_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#main_content > div{
+    width: 85%;
+}
+
+
+/*FOOTER*/
+
+body > footer {
+    background-color: orange;
+}
+
+form {
+    text-align: center;
+}
+
+body > footer > section {
+    display: flex;
+}
+
+#footer_ul{
+    display: flex;
+    list-style: none;
+}
+
+#footer_ul > div > li{
+    margin: 10px;
+}
+
+#footer_ul > div > li > a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
