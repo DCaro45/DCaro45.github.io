@@ -46,7 +46,7 @@ body > header {
     color: rgb(235,65,89);
     display: flex;
     align-items: center;
-    height: 30vh;
+    height: 10vh;
     justify-content: space-around;
 }
 
