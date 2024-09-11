@@ -42,8 +42,8 @@ ul {
 /*HEADER*/
 
 body > header {
-    background-color: orange;
-    color: rgb(235,65,89);
+    background-color: #125179;
+    color: #c56902;
     display: flex;
     align-items: center;
     height: 10vh;
@@ -103,6 +103,7 @@ body > header > nav > ul {
     /*text-decoration: none;*/
     /*margin: 0px;*/
     padding: 0px;
+
 }
 
 #nav_ul > li {
@@ -115,7 +116,7 @@ body > header > nav > ul {
 /*MAIN*/
 
 body > main article {
-    width: 70%;
+    width: 85%;
     margin: auto;
     color: black
 }
@@ -133,7 +134,13 @@ body > main article {
 /*FOOTER*/
 
 body > footer {
-    background-color: orange;
+    background-color: #125179;
+}
+
+#github {
+    color: white;
+    text-decoration: none;
+    text-align: center;
 }
 
 form {
