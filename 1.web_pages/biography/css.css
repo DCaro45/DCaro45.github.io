@@ -103,7 +103,6 @@ body > header > nav > ul {
     /*text-decoration: none;*/
     /*margin: 0px;*/
     padding: 0px;
-
 }
 
 #nav_ul > li {
@@ -135,12 +134,6 @@ body > main article {
 
 body > footer {
     background-color: #125179;
-}
-
-#github {
-    color: white;
-    text-decoration: none;
-    text-align: center;
 }
 
 form {
