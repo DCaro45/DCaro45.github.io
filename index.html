@@ -9,10 +9,11 @@
     <style>
         .error-message {
         color: red;
-        font-size: 0.9em;
+        font-size: 0.6em;
+        font-family: "Arial Narrow", sans-serif;
         }
     </style>
-    <title>David-Caro</title>
+    <title>Home</title>
 </head>
 <body>
 
@@ -138,7 +139,7 @@
     <footer>
         <hr>
         <h2> Tell Me What You Think! </h2>
-        <form action="#" method="#" onsubmit="#">
+        <form id="myForm" action="" method="" onsubmit="">
             <!--Action = Server URL (where to send data,i.e. server) /// Method = GET (non-sensitive within URL) or POST (sensitive - within HTTP request-->
             <label for="first_name"> First name: </label>
 <!--            <text>please!</text> &lt;!&ndash;- don't use this -&ndash;&gt;-->
@@ -182,10 +183,10 @@
             <br>
             <label for="bio"> Comment:</label>
             <textarea name="R" id="bio" cols="20" rows="10"></textarea>
+            <span id="warning" style="color: red; display: none;">Please enter something!</span>
 <!--            <br>-->
 <!--            <input type="checkbox" name="S" id="subscribe">-->
 <!--            <label for="subscribe">Subscribe to our newsletter!</label>-->
-<!--            <br>-->
             <input type="submit" value="Send!">
         </form>
 

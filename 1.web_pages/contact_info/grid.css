@@ -33,17 +33,18 @@ nav {
 
 #nav_ul {
     padding: 32px;
-    background-color: darkgoldenrod;
+    background-color: #e1a01e;
     grid-area: nav;
-}
-
-#nav_ul ::marker {
-    color: white;
 }
 
 #main {
     padding: 32px;
     grid-area: main;
+}
+
+#main ::marker {
+    color: white;
+
 }
 
 footer {
