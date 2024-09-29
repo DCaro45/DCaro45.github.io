@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
             image.src = data.message
-            image.width = 100;
-            image.height = 100;
+            image.width = 200;
+            image.height = 200;
         })
     }
 })

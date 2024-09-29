@@ -39,6 +39,12 @@ ul {
     margin: 0px;
 }
 
+#profile {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
 /*HEADER*/
 
 body > header {
