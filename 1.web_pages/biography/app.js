@@ -1,8 +1,8 @@
 // Code: JavaScript - Password Match
 document.addEventListener("DOMContentLoaded", () => {
 
-    const images = document.getElementById("profile");
-    for(const image of images){
+    const image = document.getElementById("profile");
+    if (image){
         fetch("https://dog.ceo/api/breeds/image/random")
         .then(response => response.json())
         .then(data => {
