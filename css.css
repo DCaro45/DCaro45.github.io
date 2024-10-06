@@ -11,52 +11,116 @@ body {
     text-align: center;
 }
 
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c56902;
+  transition: all 0.3s ease;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #161617;
+}
+
 /*HEADER*/
 
 body > header {
-    background-color: #125179;
-    color: #c56902;
-    display: flex;
-    align-items: center;
     height: 10vh;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
     justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    margin: 0px;
 }
 
 #logo {
     font-family: "Agency FB", "Fredoka one", sans-serif;
     border-radius: 30%;
     text-shadow: 2px 2px 4px #000000;
+    justify-content: space-around;
+    margin: 12px;
+}
+
+#logo > a {
+    text-decoration: none;
+    color: #c56902;
+}
+
+#logo:visited {
+    text-decoration: none;
+    color: #c56902;
 }
 
 .navbutton {
-    color: white;
+    color: #c56902;
     text-decoration: none;
     display: flex;
     padding: 12px;
     margin: 10px;
-}
-
-body > header > nav > ul {
     list-style: none;
-    text-decoration: none;
 }
 
-#nav_ul {
+.navbutton:hover {
+    background-color: #c56902;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.nav_ul {
     display: flex;
     padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
 
+.nav_ul > li {
+    margin: 0 10px;
+}
+
+
+.navbar.sticky {
+    background: #125179;
+    padding: 10px 0;
+    transition: 0.3s ease;
+}
+
+.navbar.sticky #logo a {
+    color: #c56902;
+}
+
+.navbar.sticky .nav_ul a {
+    color: #c56902;
+}
+
+.navbar.sticky .navbutton:hover {
+    color: white;
 }
 
 /*MAIN*/
 
-body > main article {
+body > main .reports {
     width: 85%;
     margin: auto;
-    color: black
+    color: black;
+    justify-content: space-around;
 }
 
 #main_content {
-    display: flex;
     justify-content: space-around;
 }
 

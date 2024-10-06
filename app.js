@@ -1,20 +1,6 @@
-let header = document.querySelector("header");
-let scrollBtn = document.querySelector(".scroll-button a");
-
-// Show/hide sticky navigation and scroll button based on scroll position
-window.onscroll = function () {
-  if (document.documentElement.scrollTop > 20) {
-    header.classList.add("sticky");
-    scrollBtn.style.display = "block";
-  } else {
-    header.classList.remove("sticky");
-    scrollBtn.style.display = "none";
-  }
-}
-
-// Code: JavaScript - Password Match
+// event listener for the form
 document.addEventListener("DOMContentLoaded", () => {
-
+    // Code: JavaScript - Password Match
     const form = document.getElementById("myForm");
     const bioInput = document.getElementById("bio");
     const errorMessage = document.createElement('div');
@@ -31,4 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
             errorMessage.style.display = "none"; // Hide warning message
         }
     });
+
+    let navbar = document.querySelector(".navbar");
+    // Show/hide sticky navigation and scroll button based on scroll position
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 10) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
 })
