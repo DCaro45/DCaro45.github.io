@@ -113,19 +113,35 @@ body > header {
 
 /*MAIN*/
 
-body > main .reports {
+body > main {
     width: 85%;
     margin: auto;
     color: black;
     justify-content: space-around;
 }
 
-#main_content {
+#main-content {
     justify-content: space-around;
 }
 
-#main_content > div{
-    width: 85%;
+#main-content .image-container > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content .image-container > ul > li {
+    margin: 10px;
+    list-style: none;
+}
+
+.report {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 20px;
 }
 
 
