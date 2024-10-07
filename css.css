@@ -13,7 +13,7 @@ body {
 
 /* SCROLL BAR */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 1vh;
 }
 
 ::-webkit-scrollbar-track {
@@ -50,10 +50,9 @@ body > header {
 
 #logo {
     font-family: "Agency FB", "Fredoka one", sans-serif;
-    border-radius: 30%;
-    text-shadow: 2px 2px 4px #000000;
     justify-content: space-around;
-    margin: 12px;
+    margin: 1.2vh;
+    font-size: xxx-large;
 }
 
 #logo > a {
@@ -70,8 +69,8 @@ body > header {
     color: #c56902;
     text-decoration: none;
     display: flex;
-    padding: 12px;
-    margin: 10px;
+    padding: 1.2vh;
+    margin: 1vh;
     list-style: none;
 }
 
@@ -89,13 +88,13 @@ body > header {
 }
 
 .nav_ul > li {
-    margin: 0 10px;
+    margin: 0 1vh;
 }
 
 
 .navbar.sticky {
     background: #125179;
-    padding: 10px 0;
+    padding: 1vh 0;
     transition: 0.3s ease;
 }
 
@@ -124,6 +123,11 @@ body > main {
     justify-content: space-around;
 }
 
+.image-container {
+    margin-top: 2vh;
+    margin-bottom: 14vh;
+}
+
 #main-content .image-container > ul {
     display: flex;
     justify-content: center;
@@ -131,7 +135,7 @@ body > main {
 }
 
 #main-content .image-container > ul > li {
-    margin: 10px;
+    margin: 1vh;
     list-style: none;
 }
 
@@ -141,7 +145,7 @@ body > main {
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    margin: 0 20px;
+    margin: 0 2vh;
 }
 
 
@@ -171,11 +175,11 @@ body > footer > section {
 }
 
 #footer_ul > div > li{
-    margin: 10px;
+    margin: 1vh;
 }
 
 #footer_ul > div > li > a{
-    margin: 10px;
+    margin: 1vh;
     color: white;
     text-decoration: none;
 }

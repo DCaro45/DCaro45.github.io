@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let navbar = document.querySelector(".navbar");
     // Show/hide sticky navigation and scroll button based on scroll position
     window.onscroll = function () {
-      if (document.documentElement.scrollTop > 10) {
+      if (document.documentElement.scrollTop > 20) {
         navbar.classList.add("sticky");
       } else {
         navbar.classList.remove("sticky");
