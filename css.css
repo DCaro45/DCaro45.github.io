@@ -40,6 +40,7 @@ body > header {
 .navbar {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     position: fixed;
     background-color: transparent;
@@ -52,7 +53,7 @@ body > header {
     font-family: "Agency FB", "Fredoka one", sans-serif;
     justify-content: space-around;
     margin: 1.2vh;
-    font-size: xxx-large;
+    font-size: 2.25em;
 }
 
 #logo > a {
@@ -146,6 +147,7 @@ body > main {
     align-items: center;
     max-width: 100%;
     margin: 0 2vh;
+    height: auto;
 }
 
 
