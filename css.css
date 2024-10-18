@@ -164,7 +164,31 @@ body > footer {
 }
 
 form {
-    text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #c56902;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display:inline-block;
+  margin: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #c56902;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
 }
 
 body > footer > section {
