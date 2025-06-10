@@ -243,47 +243,16 @@ section .button button:hover {
   color: #79bd9a;
 }
 
-/* My travel CSS */
-
-.contact .contact-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contact-details .boxes {
-  /*width: 80%;*/
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contact-details .box {
-  width: calc(100% / 2 - 20px);
-  margin: 20px 0;
-}
-
-.contact-details .boxes .topic {
-  font-size: 20px;
-  color: #0E2431;
-}
-
-.contact-details .boxes .per {
-  font-size: 60px;
-  color: #79bd9a;
-}
-
 
 /* My explore CSS */
-.explore .boxes {
+.contact .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.explore .boxes .box {
+.contact .boxes .box {
   margin: 20px 0;
   width: calc(100% / 2 - 50px);
   text-align: center;
@@ -294,12 +263,12 @@ section .button button:hover {
   transition: all 0.4s ease;
 }
 
-.explore .boxes .box:hover {
+.contact .boxes .box:hover {
   background: #79bd9a;
   color: #fff;
 }
 
-.explore .boxes .box .icon {
+.contact .boxes .box .icon {
   height: 50px;
   width: 50px;
   background: #79bd9a;
@@ -317,15 +286,39 @@ section .button button:hover {
   color: #79bd9a;
 }
 
-.explore .boxes .box:hover .topic,
-.explore .boxes .box:hover p {
+.contact .boxes .box p a {
+  color: black;
+}
+
+.contact .boxes .box:hover .topic,
+.contact .boxes .box:hover p {
   color: #0E2431;
   transition: all 0.4s ease;
 }
 
-.explore .boxes .box:hover .topic,
-.explore .boxes .box:hover p {
+.contact .boxes .box:hover .topic,
+.contact .boxes .box:hover p {
   color: #fff;
+}
+
+.contact .boxes .box:hover .topic,
+.contact .boxes .box:hover p a {
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+
+.contact .boxes .box:hover .topic,
+.contact .boxes .box:hover p a {
+  color: #fff;
+}
+
+.boxes > a {
+  display: block;
+}
+
+.boxes > a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -401,7 +394,7 @@ footer .footer_ul a:hover {
     margin: 40px 0;
   }
 
-  .explore .boxes .box {
+  .contact .boxes .box {
     margin: 20px 0;
     width: calc(100% / 2 - 20px);
   }
@@ -474,7 +467,7 @@ footer .footer_ul a:hover {
     width: 100%;
   }
 
-  .explore .boxes .box {
+  .contact .boxes .box {
     margin: 20px 0;
     width: 100%;
   }
