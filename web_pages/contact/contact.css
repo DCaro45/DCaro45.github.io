@@ -328,7 +328,14 @@ footer {
   background: #79bd9a;
   padding: 15px 0;
   text-align: center;
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   font-family: 'Poppins', sans-serif;
+  z-index: 999;
 }
 
 footer .footer_ul {

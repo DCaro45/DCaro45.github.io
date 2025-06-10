@@ -1,190 +1,369 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en" dir="ltr">
+
 <head>
-    <link rel="stylesheet" href="css.css">
-    <script src="app.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .error-message {
-        color: red;
-        font-size: 0.9em;
-        font-family: "Arial Narrow", sans-serif;
-        }
-    </style>
-    <title>David Caro</title>
+  <meta charset="UTF-8" />
+  <title>David Caro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-    <header class="main_header">
-        <nav>
-            <div class="navbar">
-                <h1 id="logo">
-                    <a href="https://dcaro45.github.io/"> David Caro </a>
-                </h1>
-                <ul class="nav_ul">
-                    <li> <a href="https://dcaro45.github.io/" class="navbutton"> Home </a> </li>
-                    <li> <a href="https://dcaro45.github.io/1.web_pages/biography" class="navbutton"> Biography </a> </li>
-                    <li> <a href="https://dcaro45.github.io/1.web_pages/contact_info" class="navbutton"> Contact Information </a> </li>
-                </ul>
+<!-- Move to up button -->
+<div class="scroll-button">
+  <a href="#home"><i class="fas fa-arrow-up"></i></a>
+</div>
+<!-- Navigation menu -->
+<nav>
+  <div class="navbar">
+    <div class="logo"><a href="#home">David Caro</a></div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#travel">Travel</a></li>
+      <li><a href="https://dcaro45.github.io/1.web_pages/contact_info">Contact</a></li>
+      <div class="cancel-btn">
+        <i class="fas fa-times"></i>
+      </div>
+    </ul>
+    <div class="media-icons">
+      <a href="https://www.linkedin.com/in/david-caro-8ba725160" target="blanck"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.github.com/DCaro45" target="blanck"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section class="home" id="home">
+  <div class="home-content">
+    <div class="text">
+      <div class="text-one">Hello,</div>
+      <div class="text-two">I'm David Caro</div>
+<!--        <div class="text-three">Over The Past Year I've Been Lucky Enough To Explore Some Amazing Destinations</div>-->
+<!--        <div class="text-four">These Are Just Some Of My Favourite Places!</div>-->
+    </div>
+    <div class="button">
+      <button onclick="window.location.href = '#articles'">Let's Explore</button>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="content">
+    <div class="title"><span>About Me</span></div>
+    <div class="about-details">
+      <div class="left">
+        <img src="Images/Profile Picture.jpg" alt="Me being me" />
+      </div>
+      <div class="right">
+        <div class="topic">Some words I guess </div>
+        <p>
+          Hi I'm David and I'm a 24 year old student at Durham university studying a master's degree in Physics. I'm a keen programmer and always looking to learn new things.
+          <br>
+          I've developed this website while learning about front end web development from the Brightnetwork Couch to Coder course, I hope you like it!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Articles section-->
+<section class="articles" id="articles">
+  <div class="container">
+    <div class="heading">
+    <h3><span>Articles</span></h3>
+    </div>
+    <div class="box">
+      <div class="article-scroll">
+        <!-- Article Card -->
+        <div class="card">
+          <img src="Images/TDGL.jpg" alt="TDGL paper">
+          <div class="card-content">
+            <h3>Josephson Junction Critical Currents</h3>
+            <div class="button">
+              <button onclick="window.location.href='#TDGL'">Read More</button>
             </div>
-        </nav>
-    </header>
-
-    <main>
-        <div id="main-content">
-            <div class="image-container">
-                <ul>
-                    <li> <a href="#Feynman"> <img src="Images/Feynman.jpg" class="report"> </a> </li>
-                    <li> <a href="#Fourier"> <img src="Images/Fourier.jpg" class="report"> </a> </li>
-                    <li> <a href="#BigG"> <img src="Images/BigG.jpg" class="report"> </a> </li>
-                    <li> <a href="#Planck"> <img src="Images/Planck.jpg" class="report"> </a> </li>
-                    <li> <a href="#Viscosity"> <img src="Images/Viscosity.jpg" class="report"> </a> </li>
-                </ul>
-                <footer id="Feynman">
-                </footer>
-            </div>
-            <div>
-                <article>
-                    <header>
-                        <h2> <a href="PDFs\Monte Carlo Evaluation of the Feynman Path Integral to Determine Wavefunctions Within Quantum Anisotropic Potentials.pdf" target="blank">
-                            Feynman Path Integral Evaluation </a> </h2>
-                    </header>
-
-                    <main>
-                        <p>
-                            The Feynman Path Integral is a method of calculating the wavefunction of a particle in a potential. The method is based on the principle of least action and is used to calculate the probability amplitude of a particle moving from one point to another in a given time. The path integral is a sum over all possible paths that the particle can take, weighted by the action of each path. The method is used in quantum mechanics to calculate the wavefunction of a particle in a potential and is an important tool in the study of quantum field theory.
-                        </p>
-                    </main>
-
-                    <footer id="Fourier">
-                        <h4>Author: David Caro</h4>
-                        <h4> Date : 15/03/2024 </h4>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                        <h2> <a href="PDFs\Fourier Analysis in Modelling Intensity Functions and Spatial Filtering In a 4f-Optical Setup.pdf" target="blanck"> Fourier Analysis of Interference Patterns </a> </h2>
-                    </header>
-
-                    <main>
-                        <p>
-                            Fourier analysis is a mathematical technique that allows us to decompose a function into its constituent frequencies. It is used in a wide range of applications, from signal processing to image analysis. In this article, we will use Fourier analysis to model the intensity function of an interference pattern in a 4f-optical setup. The 4f-optical setup is a common configuration used in optical systems to filter and process images. By using Fourier analysis, we can gain insight into the behavior of the interference pattern and the effect of spatial filtering on the image.
-                        </p>
-                    </main>
-
-                    <footer id="BigG">
-                        <h4>Author: David Caro and Harel Cohen</h4>
-                        <h4> Date : 21/03/2023 </h4>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                        <h2> <a href="PDFs\What’s Up With Big G.pdf" target="blanck">What's Up with Big G?</a></h2>
-                    </header>
-
-                    <main>
-                        <p>
-                            The gravitational constant, also known as Big G, is a fundamental constant that appears in Newton's law of universal gravitation. It is a measure of the strength of the gravitational force between two objects and is an important parameter in many areas of physics, from astrophysics to geophysics. In this article, we will explore the history of Big G, how it is measured, and why it is important for our understanding of the universe.
-                        </p>
-                    </main>
-
-                    <footer id="Viscosity">
-                        <h4> Author: S. Cavens et al </h4>
-                        <h4> Date : 17/06/2022 </h4>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                        <h2> <a href="PDFs\Determination of The Viscosity of Water and Comments on Variation.pdf" target="blanck">Determination of the Viscosity of Water</a></h2>
-                    </header>
-
-                    <main>
-                        <p>
-                            Water is a common substance that exhibits a wide range of physical properties, including viscosity. Viscosity is a measure of a fluid's resistance to flow and is an important parameter in many areas of science and engineering. In this article, we will explore how the viscosity of water can be determined experimentally and discuss the factors that can affect its value. By measuring the viscosity of water, we can gain insight into the behavior of this important substance and its role in various natural and industrial processes.
-                        </p>
-                    </main>
-
-                    <footer id="Planck">
-                        <h4>Author: David Caro et al</h4>
-                        <h4>Date : 11/11/2022</h4>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                        <h2> <a href="PDFs\Determination of Planck’s Constant Through Bremsstrahlung Radiation.pdf" target="blanck">Determination of Planck's Constant</a> </h2>
-                    </header>
-
-                    <main>
-                        <p>
-                            Planck's constant is a fundamental constant that appears in quantum mechanics and is a measure of the scale of quantum effects. It is named after the physicist Max Planck, who first introduced it in 1900 to explain the spectrum of blackbody radiation. In this article, we will explore how Planck's constant can be determined experimentally through the measurement of Bremsstrahlung radiation. Bremsstrahlung radiation is a type of electromagnetic radiation that is emitted when charged particles are decelerated in a material. By measuring the energy of the emitted radiation, we can determine the value of Planck's constant and verify its importance in quantum mechanics.
-                        </p>
-                    </main>
-
-                    <footer>
-                        <h4> Author: David Caro</h4>
-                        <h4> Date : 17/03/2022 </h4>
-                    </footer>
-                </article>
-            </div>
+          </div>
         </div>
-    </main>
-
-    <footer>
-        <hr>
-        <div class="title">
-            <h2> Tell Me What You Think! </h2>
+        <!-- Article Card -->
+        <div class="card">
+          <img src="Images/Cherenkov.jpg" alt="Cherenkov paper">
+          <div class="card-content">
+            <h3>Cherenkov radiation</h3>
+            <div class="button">
+              <button onclick="window.location.href='#Cherenkov'">Read More</button>
+            </div>
+          </div>
         </div>
-        <form id="myForm" action="" method="" onsubmit="">
-            <label for="first_name"> First name: </label>
-            <input type="text" name="F_N" id="first_name" required>
-            <br>
-            <label for="last_name"> Last name: </label>
-            <input type="text" name="L_N" id="last_name" required>
-            <br>
-            <label for="email"> Email: </label>
-            <input type="email" name="E" id="email" required>
-            <br>
-            <text> Favourite Report: </text>
-            <input type="radio" name="T" id="FPI" value="FPI">
-            <label for="FPI" class="radio">FPI</label>
-            <input type="radio" name="T" id="Optics" value="Optics">
-            <label for="Optics" class="radio">Optics</label>
-            <input type="radio" name="T" id="Water" value="Water">
-            <label for="Water" class="radio">Viscosity</label>
-            <input type="radio" name="T" id="Big G" value="Big G">
-            <label for="Big G" class="radio">Big G</label>
-            <input type="radio" name="T" id="X-Rays" value="X-Rays">
-            <label for="X-Rays" class="radio">X-Rays</label>
-            <br>
-            <label for="country">Country:</label>
-            <select name="C" id="country">
-                <option value="england">England</option>
-                <option value="scotland">Scotland</option>
-                <option value="wales">Wales</option>
-                <option value="northern_ireland">Northern Ireland</option>
-            </select>
-            <br>
-            <label for="bio"> Comment:</label>
-            <textarea name="R" id="bio" cols="20" rows="10"></textarea>
-            <span id="warning" style="color: red; display: none;">Please enter something!</span>
-            <input type="submit" value="Send!">
-        </form>
+        <!-- Article Card -->
+        <div class="card">
+          <img src="Images/Feynman.jpg" alt="Feynman paper">
+          <div class="card-content">
+            <h3>Feynman Path Integral Evaluation</h3>
+            <div class="button">
+              <button onclick="window.location.href='#Feynman'">Read More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Article Card -->
+        <div class="card">
+          <img src="Images/Fourier.jpg" alt="Fourier analysis paper">
+          <div class="card-content">
+            <h3>Interference and Spatial Filtering</h3>
+            <div class="button">
+              <button onclick="window.location.href='#Fourier'">Read More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Article Card -->
+        <div class="card">
+          <img src="Images/Planck.jpg" alt="Planck's constant paper">
+          <div class="card-content">
+            <h3>Planck's Constant</h3>
+            <div class="button">
+              <button onclick="window.location.href='#Planck'">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <section>
-            <nav>
-                <ul id="footer_ul">
-                    <div>
-                        <li> <a href="https://dcaro45.github.io/"> Home </a> </li>
-                        <li> <a href="https://dcaro45.github.io/1.web_pages/biography"> Biography </a> </li>
-                        <li> <a href="https://dcaro45.github.io/1.web_pages/contact_info"> Contact Information </a> </li>
-                    </div>
-                </ul>
-            </nav>
-        </section>
-    </footer>
+  <!-- Abstracts -->
+  <div class="container">
+    <section class="abstract" id="TDGL">
+      <div class="content">
+        <div class="title"><span> <a href="PDFs\TDGL_Simulations_of_Critical_Current_Densities_Across_Superconducting_Josephson_Junction_Arrays.pdf.pdf" target="blank"> TDGL Simulations of Josephson Junction Critical Currents <i class="fas fa-external-link-alt"></i> </a> </span></div>
+        <div class="text">
+          <p>
+            The TDGL (Time-Dependent Ginzburg-Landau) theory is a mathematical framework used to describe the behavior of superconductors. It is based on the Ginzburg-Landau theory, which describes the macroscopic properties of superconductors in terms of a complex order parameter. The TDGL theory extends this framework to include time-dependent effects, allowing for the simulation of critical current densities across superconducting Josephson junction arrays. This method is used to study the behavior of superconducting materials and their applications in various fields, including quantum computing and superconducting electronics.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="abstract" id="Cherenkov">
+      <div class="content">
+        <div class="title"><span> <a href="PDFs\Cherenkov_Radiation_Dissertation.pdf.pdf" target="blank"> Cherenkov Radiation <i class="fas fa-external-link-alt"></i></a> </span></div>
+        <div class="text">
+          <p>
+            Cherenkov radiation is a phenomenon that occurs when a charged particle, such as an electron, travels through a medium at a speed greater than the speed of light in that medium. This results in the emission of a characteristic blue light, which can be observed in certain conditions, such as in nuclear reactors or particle detectors. The phenomenon is named after the Russian physicist Pavel Cherenkov, who first observed it in 1934. Cherenkov radiation has important applications in various fields, including particle physics, astrophysics, and medical imaging.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="abstract" id="Feynman">
+      <div class="content">
+        <div class="title"><span> <a href="PDFs\Monte_Carlo_Evaluation_of_the_Feynman_Path_Integral_to_Determine_Wavefunctions_Within_Quantum_Anisotropic_Potentials.pdf.pdf" target="blank"> Feynman Path Integral Evaluation <i class="fas fa-external-link-alt"></i></a> </span></div>
+        <div class="text">
+          <p>
+            The Feynman Path Integral is a method of calculating the wavefunction of a particle in a potential. The method is based on the principle of least action and is used to calculate the probability amplitude of a particle moving from one point to another in a given time. The path integral is a sum over all possible paths that the particle can take, weighted by the action of each path. The method is used in quantum mechanics to calculate the wavefunction of a particle in a potential and is an important tool in the study of quantum field theory.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="abstract" id="Fourier">
+      <div class="content">
+        <div class="title"><span> <a href="PDFs\Fourier_Analysis_of_Aperture_Functions_to_Model_Interference_and_Spatial_Filtering_in_a_4f-Optical_Setup.pdf.pdf" target="blanck"> Fourier Analysis of Interference Patterns <i class="fas fa-external-link-alt"></i></a> </span></div>
+        <div class="text">
+          <p>
+            Fourier analysis is a mathematical technique that allows us to decompose a function into its constituent frequencies. It is used in a wide range of applications, from signal processing to image analysis. In this article, we will use Fourier analysis to model the intensity function of an interference pattern in a 4f-optical setup. The 4f-optical setup is a common configuration used in optical systems to filter and process images. By using Fourier analysis, we can gain insight into the behavior of the interference pattern and the effect of spatial filtering on the image.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="abstract" id="Planck">
+      <div class="content">
+        <div class="title"><span> <a href="PDFs\Determination_of_Planck’s_Constant_Through_Bremsstrahlung_Radiation.pdf.pdf" target="blanck">Determination of Planck's Constant <i class="fas fa-external-link-alt"></i></a> </span></div>
+        <div class="text">
+          <p>
+            Planck's constant is a fundamental constant in physics that relates the energy of a photon to its frequency. It is named after Max Planck, who first introduced it in 1900 as part of his work on blackbody radiation. The constant is denoted by the symbol h and has a value of approximately 6.626 x 10^-34 J·s. The determination of Planck's constant is an important task in experimental physics, as it provides a fundamental link between the macroscopic and microscopic worlds. In this article, we will explore the methods used to determine Planck's constant and its significance in modern physics.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!--&lt;!&ndash; My Travel Section  &ndash;&gt;-->
+<!--<section class="travel" id="travel">-->
+<!--  <div class="content">-->
+<!--    <div class="title"><span>Why I Travel</span></div>-->
+<!--    <div class="travel-details">-->
+<!--      <div class="text">-->
+<!--        <div class="topic">Wanderlust: My Journey to Explore the World</div>-->
+<!--        <p>I travel because it's my way of experiencing new cultures, meeting fascinating people, and discovering hidden gems. Every journey is a chance to step outside my comfort zone, broaden my horizons, and create lasting memories. Whether it's exploring bustling cities or hiking through serene landscapes, the world is my playground, and I'm eager to see it all</p>-->
+<!--        <div class="experience">-->
+<!--          <div class="num">8</div>-->
+<!--          <div class="exp">-->
+<!--            COUNTRIES <br />-->
+<!--            VISITED SO FAR THIS YEAR-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="boxes">-->
+<!--        <div class="box">-->
+<!--          <div class="topic">To Relax</div>-->
+<!--          <div class="per">90%</div>-->
+<!--        </div>-->
+<!--        <div class="box">-->
+<!--          <div class="topic">New Foods</div>-->
+<!--          <div class="per">80%</div>-->
+<!--        </div>-->
+<!--        <div class="box">-->
+<!--          <div class="topic">Adventure</div>-->
+<!--          <div class="per">70%</div>-->
+<!--        </div>-->
+<!--        <div class="box">-->
+<!--          <div class="topic">Cultural Immersion</div>-->
+<!--          <div class="per">60%</div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; My Exlpore More Section  &ndash;&gt;-->
+<!--<section class="explore" id="explore">-->
+<!--  <div class="content">-->
+<!--    <div class="title"><span>Explore More</span></div>-->
+<!--    <div class="boxes">-->
+<!--      <div class="box">-->
+<!--        <div class="icon">-->
+<!--          <i class="fas fa-palette"></i>-->
+<!--        </div>-->
+<!--        <div class="topic">ART</div>-->
+<!--        <p>Exploring global art scenes is a journey of cultural immersion, inspiring creativity, and appreciating diverse perspectives.</p>-->
+<!--      </div>-->
+<!--      <div class="box">-->
+<!--        <div class="icon">-->
+<!--          <i class="fas fa-landmark"></i>-->
+<!--        </div>-->
+<!--        <div class="topic">Culture</div>-->
+<!--        <p>Embark on a journey of discovery, immersing yourself in diverse cultures, traditions, and histories.</p>-->
+<!--      </div>-->
+<!--      <div class="box">-->
+<!--        <div class="icon">-->
+<!--          <i class="fas fa-mountain"></i>-->
+<!--        </div>-->
+<!--        <div class="topic">Adventure</div>-->
+<!--        <p>Embark on daring expeditions, conquer challenging terrains, and create unforgettable memories.</p>-->
+<!--      </div>-->
+<!--      <div class="box">-->
+<!--        <div class="icon">-->
+<!--          <i class="fas fa-drumstick-bite"></i>-->
+<!--        </div>-->
+<!--        <div class="topic">Food</div>-->
+<!--        <p>Savour the world's flavours, from street food to gourmet dining, and discover culinary treasures.</p>-->
+<!--      </div>-->
+<!--      <div class="box">-->
+<!--        <div class="icon">-->
+<!--          <i class="fas fa-camera-retro"></i>-->
+<!--        </div>-->
+<!--        <div class="topic">Photography</div>-->
+<!--        <p>Explore breathtaking landscapes, document vibrant cultures, and immortalize unforgettable moments through the lens.</p>-->
+<!--      </div>-->
+<!--      <div class="box">-->
+<!--        <div class="icon">-->
+<!--          <i class="fas fa-tag"></i>-->
+<!--        </div>-->
+<!--        <div class="topic">Shopping</div>-->
+<!--        <p>Indulge in retail therapy, exploring vibrant markets, designer boutiques, and local shops.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!-- Contact Me Section -->
+<!--<section class="Form" id="form">-->
+<!--<hr>-->
+<!--<h2>Sign Up To My Newsletter! <br> For The Latest Updates From My Adventures Around The World </h2>-->
+<!--<form action=""  method="">-->
+<!--    <label for="First_Name">First Name:</label>-->
+<!--    <input type="text" id="First_Name"  name="First_Name" required>-->
+<!--     <br> -->
+
+<!--    <label for="Last_Name">Last Name:</label>-->
+<!--    <input type="text" id="Last_Name"  name="Last_Name" required>-->
+<!--    <br>-->
+
+<!--    <label for="Email">Email:</label>-->
+<!--    <input type="email" name="Email" id="Email">-->
+<!--    <br>-->
+
+<!--    <label for="Password">Password:</label>-->
+<!--    <input type="password" name="Password" id="Password">-->
+<!--    <br>-->
+
+<!--    <label for="Reason to travel">Favourite Reason To Travel:</label>-->
+<!--    <input type="radio" name="Reason to travel" id="Relax" value="Relax">-->
+<!--    <label for="Relax">Relax</label>-->
+<!--    <input type="radio" name="Reason to travel" id="Adventure" value="Adventure">-->
+<!--    <label for="Adventure">Adventure</label>-->
+<!--    <input type="radio" name="Reason to travel" id="Culture" value="Culture">-->
+<!--    <label for="Culture">Culture</label>-->
+<!--    <input type="radio" name="Reason to travel" id="Siteseeing" value="Siteseeing">-->
+<!--    <label for="Siteseeing">Siteseeing</label>-->
+<!--    <br>-->
+
+<!--    <label for="country">Country:</label>-->
+<!--    <select name="country" id="country">-->
+<!--        <option value="england">England</option>-->
+<!--        <option value="Scotland">Scotland</option>-->
+<!--        <option value="Wales">Wales</option>-->
+<!--        <option value="Northern_Ireland">Northern Ireland</option>-->
+<!--    </select>-->
+<!--    <br> -->
+
+<!--    <label for="bio">Favourite Place You've Been:</label>-->
+<!--    <textarea name="bio" id="bio" cols="30" rows="10"></textarea>-->
+<!--    <br>-->
+
+<!--    <input type="checkbox" name="subscribe" id="subscribe">-->
+<!--    <label for="subscribe">Subscribe to our newsletter!</label>-->
+<!--    <br>-->
+
+<!--    <input type="submit" value="Send!">-->
+<!--</section>-->
+
+<!-- Contact Me section Start -->
+<!--<section class="contact" id="contact">-->
+<!--  <div class="content">-->
+<!--    <div class="title"><span>Contact Me</span></div>-->
+<!--    <div class="text">-->
+<!--      <div class="topic">Planning Your Next Getaway?</div>-->
+<!--      <p>Ready to embark on your dream getaway? Let's plan it together! Contact me via Email or connect with me on Facebook, X, and Instagram. Let's create unforgettable memories.</p>-->
+<!--      <div class="button">-->
+<!--        <button>Let's Chat</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!-- Footer Section Start -->
+<!--<footer>-->
+<!--  <div class="text">-->
+<!--    <span>Created By <a href="index_old.html#about">Daniel Rendon Salazar</a> | &#169; 2024 All Rights Reserved</span>-->
+<!--  </div>-->
+<!--</footer>-->
+
+<footer>
+  <div class="footer">
+    <ul class="footer_ul">
+      <li> <a href="#home"> Home </a> </li>
+      <li> <a href="#about"> About </a> </li>
+      <li> <a href="https://dcaro45.github.io/1.web_pages/contact_info"> Contact Information </a> </li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
