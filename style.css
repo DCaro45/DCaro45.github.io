@@ -22,11 +22,10 @@
   background: #125179;
   border-radius: 12px;
   transition: all 0.3s ease;
-  
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0E2431;
+  background: #c56902;
 }
 
 /* navbar styling */
@@ -667,7 +666,9 @@ footer .footer .footer_ul a {
 }
 
 footer .footer_ul a:hover {
+  color: white;
   text-decoration: underline;
+  text-decoration-color: #c56902;
 }
 
 
