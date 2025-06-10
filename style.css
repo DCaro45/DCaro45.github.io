@@ -19,7 +19,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #79bd9a;
+  background: #125179;
   border-radius: 12px;
   transition: all 0.3s ease;
   
@@ -40,7 +40,7 @@ nav {
 }
 
 nav.sticky {
-  background: #79bd9a;
+  background: #125179;
   padding: 13px 0;
 }
 
@@ -55,11 +55,11 @@ nav .navbar {
 nav .navbar .logo a {
   font-weight: 500;
   font-size: 35px;
-  color: #79bd9a;
+  color: #125179;
 }
 
 nav.sticky .navbar .logo a {
-  color: #fff;
+  color: white;
 }
 
 nav .navbar .menu {
@@ -75,37 +75,37 @@ nav .navbar .menu li {
 .navbar .menu a {
   font-size: 22px;
   font-weight: 500;
-  color: #79bd9a;
+  color: #125179;
   padding: 6px 0;
   transition: all 0.4s ease;
 }
 
 .navbar .menu a:hover {
-  color: #155365;
+  color: white;
 }
 
 nav.sticky .menu a {
-  color: #FFF;
+  color: white;
 }
 
 nav.sticky .menu a:hover {
-  color: #0E2431;
+  color: #c56902;
 }
 
 .navbar .media-icons a {
-  color: #79bd9a;
+  color: #125179;
   font-size: 18px;
   margin: 0 6px;
 }
 
 nav.sticky .media-icons a {
-  color: #FFF;
+  color: white;
 }
 
 .navbar.active {
   position: fixed;
   width: 250px;
-  background-color: #79bd9a;
+  background-color: #125179;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -149,7 +149,7 @@ nav.sticky .media-icons a {
 nav .menu-btn,
 .navbar .menu .cancel-btn {
   position: absolute;
-  color: #fff;
+  color: white;
   right: 4em;
   top: 1.2em;
   font-size: 20px;
@@ -159,15 +159,15 @@ nav .menu-btn,
 }
 
 nav .menu-btn {
-  color: #79bd9a;
+  color: #125179;
 }
 
 nav.sticky .menu-btn {
-  color: #FFF;
+  color: white;
 }
 
 .navbar .menu .menu-btn {
-  color: #fff;
+  color: white;
 }
 
 /* home section styling */
@@ -206,7 +206,7 @@ nav.sticky .menu-btn {
   font-size: 50px;
   font-weight: bold;
   margin: 5px 0;
-  color: #79bd9a;
+  color: #125179;
 }
 
 .home .text-four {
@@ -225,17 +225,17 @@ nav.sticky .menu-btn {
   border-radius: 6px;
   font-size: 25px;
   font-weight: 400;
-  background: #79bd9a;
-  color: #fff;
+  background: #125179;
+  color: white;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
 }
 
 .home .button button:hover {
-  border-color: #79bd9a;
-  background-color: #fff;
-  color: #79bd9a;
+  border-color: #125179;
+  background-color: white;
+  color: #125179;
 }
 
 /* Section Styling */
@@ -264,7 +264,7 @@ section .title {
 }
 
 section .title span {
-  color: #0E2431;
+  color: #c56902;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -277,7 +277,7 @@ section .title span::after {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #79bd9a;
+  background: #125179;
   left: 0;
   bottom: 0;
 }
@@ -326,17 +326,17 @@ section .button button {
   border-radius: 4px;
   font-size: 1em;
   font-weight: 400;
-  background: #79bd9a;
-  color: #fff;
+  background: #125179;
+  color: white;
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 
 section .button button:hover {
-  border-color: #79bd9a;
-  background-color: #fff;
-  color: #79bd9a;
+  border-color: #125179;
+  background-color: white;
+  color: #125179;
 }
 
 /* articles section */
@@ -353,18 +353,18 @@ section .button button:hover {
 .container .heading{
   width: 50%;
   padding-bottom: 50px;
-  color: #0E2431;
+  color: #125179;
 }
 .container .heading h3{
   font-size: 3em;
   font-family: 'Ubuntu';
   font-weight: bolder;
   padding-bottom: 10px;
-  border-bottom: 3px solid #79bd9a ;
+  border-bottom: 3px solid #125179 ;
 }
 .container .heading h3 span{
  font-weight: 150;
- color: #79bd9a;
+ color: #c56902;
 }
 .container .box{
   display: flex;
@@ -392,7 +392,7 @@ section .button button:hover {
 
 .article-scroll .card {
   min-width: 250px;
-  background: #fff;
+  background: white;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   border-radius: 12px;
   overflow: hidden;
@@ -407,7 +407,7 @@ section .button button:hover {
 
 .article-scroll .card-content {
   padding: 12px;
-  color: #79bd9a;
+  color: #155365;
 }
 
 .article-scroll .card-content h3 {
@@ -499,7 +499,7 @@ section .button button:hover {
 
 .travel-details .boxes .per {
   font-size: 60px;
-  color: #79bd9a;
+  color: #125179;
 }
 
 /* My explore CSS */
@@ -521,26 +521,26 @@ section .button button:hover {
 }
 
 .explore .boxes .box:hover {
-  background: #79bd9a;
-  color: #fff;
+  background: #125179;
+  color: white;
 }
 
 .explore .boxes .box .icon {
   height: 50px;
   width: 50px;
-  background: #79bd9a;
+  background: #125179;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
   font-size: 18px;
-  color: #fff;
+  color: white;
   margin: 0 auto 10px auto;
   transition: all 0.4s ease;
 }
 
 .boxes .box:hover .icon {
-  background-color: #fff;
-  color: #79bd9a;
+  background-color: white;
+  color: #125179;
 }
 
 .explore .boxes .box:hover .topic,
@@ -551,7 +551,7 @@ section .button button:hover {
 
 .explore .boxes .box:hover .topic,
 .explore .boxes .box:hover p {
-  color: #fff;
+  color: white;
 }
 
 /* form section */
@@ -567,7 +567,7 @@ form {
   font-family:'Ubuntu' ;
   margin: 0 auto;
   padding: 20px;
-  border: 2px solid #79bd9a;
+  border: 2px solid #125179;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   background: #F0F8FF;
@@ -578,7 +578,7 @@ label {
   margin: 10px;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #79bd9a;
+  color: #125179;
 }
 
 input[type="text"],
@@ -640,7 +640,7 @@ button[type="submit"]:hover {
 /*Footer*/
 
 footer {
-  background: #79bd9a;
+  background: #125179;
   padding: 15px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -676,8 +676,8 @@ footer .footer_ul a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: #fff;
-  background: #79bd9a;
+  color: white;
+  background: #125179;
   padding: 7px 12px;
   font-size: 18px;
   border-radius: 6px;
@@ -731,7 +731,7 @@ footer .footer_ul a:hover {
     position: fixed;
     left: -100%;
     top: 0;
-    background: #79bd9a;
+    background: #125179;
     height: 100vh;
     max-width: 400px;
     width: 100%;
@@ -744,7 +744,7 @@ footer .footer_ul a:hover {
   nav .navbar .menu a {
     font-size: 23px;
     display: block;
-    color: #fff;
+    color: white;
     margin: 10px 0;
   }
 

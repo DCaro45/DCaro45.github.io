@@ -19,7 +19,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #79bd9a;
+  background: #125179;
   border-radius: 12px;
   transition: all 0.3s ease;
 
@@ -36,7 +36,7 @@ nav {
   z-index: 998;
   transition: all 0.3s ease;
   font-family: 'Ubuntu', sans-serif;
-  background: #79bd9a;
+  background: #125179;
 }
 
 nav .navbar {
@@ -72,7 +72,7 @@ nav .navbar .menu li {
 }
 
 .navbar .menu a:hover {
-  color: #155365;
+  color: #c56902;
 }
 
 .navbar .media-icons a {
@@ -84,7 +84,7 @@ nav .navbar .menu li {
 .navbar.active {
   position: fixed;
   width: 250px;
-  background-color: #79bd9a;
+  background-color: #125179;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -138,7 +138,7 @@ nav .menu-btn,
 }
 
 nav .menu-btn {
-  color: #79bd9a;
+  color: #125179;
 }
 
 .navbar .menu .menu-btn {
@@ -168,7 +168,7 @@ section .title {
 }
 
 section .title span {
-  color: #0E2431;
+  color: #c56902;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -181,7 +181,7 @@ section .title span::after {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #79bd9a;
+  background: #125179;
   left: 0;
   bottom: 0;
 }
@@ -230,7 +230,7 @@ section .button button {
   border-radius: 4px;
   font-size: 1em;
   font-weight: 400;
-  background: #79bd9a;
+  background: #125179;
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
@@ -238,9 +238,9 @@ section .button button {
 }
 
 section .button button:hover {
-  border-color: #79bd9a;
+  border-color: #125179;
   background-color: #fff;
-  color: #79bd9a;
+  color: #125179;
 }
 
 
@@ -264,14 +264,14 @@ section .button button:hover {
 }
 
 .contact .boxes .box:hover {
-  background: #79bd9a;
+  background: #125179;
   color: #fff;
 }
 
 .contact .boxes .box .icon {
   height: 50px;
   width: 50px;
-  background: #79bd9a;
+  background: #125179;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -283,7 +283,7 @@ section .button button:hover {
 
 .boxes .box:hover .icon {
   background-color: #fff;
-  color: #79bd9a;
+  color: #125179;
 }
 
 .contact .boxes .box p a {
@@ -325,7 +325,7 @@ section .button button:hover {
 /*Footer*/
 
 footer {
-  background: #79bd9a;
+  background: #125179;
   padding: 15px 0;
   text-align: center;
   padding: 15px 0;
@@ -369,7 +369,7 @@ footer .footer_ul a:hover {
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #79bd9a;
+  background: #125179;
   padding: 7px 12px;
   font-size: 18px;
   border-radius: 6px;
@@ -423,7 +423,7 @@ footer .footer_ul a:hover {
     position: fixed;
     left: -100%;
     top: 0;
-    background: #79bd9a;
+    background: #125179;
     height: 100vh;
     max-width: 400px;
     width: 100%;
