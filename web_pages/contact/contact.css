@@ -244,17 +244,20 @@ section .button button:hover {
 }
 
 
-/* My explore CSS */
+/* My contact CSS */
 .contact .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .contact .boxes .box {
   margin: 20px 0;
-  width: calc(100% / 2 - 50px);
+  width: calc(50% - 50px);
   text-align: center;
   border-radius: 12px;
   padding: 30px 10px;
@@ -465,7 +468,7 @@ footer .footer_ul a:hover {
 
   .contact-details .text {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   .contact-details .boxes {
