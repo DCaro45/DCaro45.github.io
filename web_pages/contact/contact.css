@@ -124,27 +124,6 @@ nav .navbar .menu li {
   margin: 0 6px;
 }
 
-/* Side Navigation Menu Button CSS */
-nav .menu-btn,
-.navbar .menu .cancel-btn {
-  position: absolute;
-  color: #fff;
-  right: 4em;
-  top: 1.2em;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: none;
-}
-
-nav .menu-btn {
-  color: white;
-}
-
-.navbar .menu .menu-btn {
-  color: #fff;
-}
-
 /* Section Styling */
 /* For elements where we have to apply the same styling
 we select the 'Section' type then the specific 'Class' */
