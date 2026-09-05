@@ -1,5 +1,5 @@
 // ── Configuration ─────────────────────────────────────────────────────────────
-const VM_BASE   = "http://localhost:5000";   // ← replace after IP is assigned
+const VM_BASE   = "http://35.209.106.206:5000";   // ← replace after IP is assigned
 const SECRET    = "054ba91d47086be0e66970966c25db719735987bc5dee8de75bae309f6f1bcdb";            // ← replace with the value set in SHARED_SECRET env var
 const PING_INTERVAL_MS  = 60 * 1000;         // heartbeat every
 const POLL_INTERVAL_MS  = 1000;                   // readiness poll every
